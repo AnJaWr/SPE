@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+display: flex;
+justify-content: right;
+width: 100%;
+
+background-color: white;
+flex-wrap: wrap;
+}
+.main{
+    
+height: 100vh;
+    background-image: url(img/9883040_4237128.jpg);
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+.about{
+    width: 32%;
+    height: 25vh;
+    padding:20px;
+margin:10%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+h1, h2, .btn {
+  
+  font-family: "Montserrat", sans-serif;;
+  font-optical-sizing: auto;
+  text-align: center; width: 100%;
+}
+h1{
+  font-weight: 700;
+  font-size: 3rem;
+  font-style: normal;
+  padding: 20px;
+ 
+}
+  h2{
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: normal;
+padding: 15px}
+.btn{
+    background-color: red;
+    color: white;
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 10px;
+    margin:50px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+   max-width: 30%;
+   transition: 1s;
+}
+.btn:hover{
+  background-color: rgb(134, 5, 5);
+}
+.left, .right{
+  padding: 5%;
+  width: 46%;
+
+
+}
+p{margin-top: 20px;}
+.navigation{
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+  justify-content: right;
+}
+
+    /* Pasek nawigacyjny */
+  
+
+    nav {
+      color: white;
+      align-items: center;
+      min-height: 5vh;
+      background: #ffffff;
+      padding:0;
+    }
+  .nav-m{ position: fixed;
+    top:0;
+   right: 0;
+   padding:20px;
+  width: 30%;
+background-color: #ffffff;display:flex;
+      justify-content: right;}
+    nav .logo {
+align-self: flex-start;
+    }
+
+    nav ul {      
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+        display: flex;
+      margin-left: 20px;
+      width: 180px;
+  height: 50px;
+  background-color: #3b3b3b; /* lub inny kolor */
+  color: white;
+  border: none;
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+text-align: center;
+justify-content: center;
+align-items: center;
+transition: 1s;
+    }
+     nav ul li:hover{
+       background-color: red;
+     }
+
+    nav ul li a {
+color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+        }
+
+    /* Styl hamburgera */
+    .burger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 4px;
+      transition: 0.3s;
+    }
+
+    /* Responsywność */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #ffffff;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .burger {
+        display: flex;
+      }
+    }
+
+    .background-two{
+      background-image: url(/img/72809.jpg);
+      background-size: cover;
+
+    }
+    .background-contact,
+    .background-one{
+      
+    width: 100%;
+  background-position: center;
+height: 30vh;}
+
+.background-one{
+  background-image: url(/img/3640.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.background-contact{
+ background-image: url(/img/fotowoltanika_wiatraki.jpg);
+     background-size: cover;
+     background-repeat: no-repeat; 
+     background-position: top center;
+     height: 50vh;
+}
+
+
+     li{
+      margin-bottom: 10px;
+     }
+     .link{
+      text-decoration: none;
+      font-weight: 600;
+      color:red;
+     }
+     .bold{
+      font-weight: 600;
+     }
