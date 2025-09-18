@@ -173,7 +173,7 @@ color: white;
     }
 
     .background-two{
-      background-image: url(/img/72809.jpg);
+      background-image: url(img/72809.jpg);
       background-size: cover;
 
     }
@@ -185,20 +185,20 @@ color: white;
 height: 30vh;}
 
 .background-one{
-  background-image: url(/img/3640.jpg);
+  background-image: url(img/3640.jpg);
      background-size: cover;
      background-repeat: no-repeat;
 }
 
 .background-contact{
- background-image: url(/img/fotowoltanika_wiatraki.jpg);
+ background-image: url(img/fotowoltanika_wiatraki.jpg);
      background-size: cover;
      background-repeat: no-repeat; 
      background-position: top center;
      height: 50vh;
 }
 .background-history{
- background-image: url(/img/fotowoltanika_dol.jpg);
+ background-image: url(img/fotowoltanika_dol.jpg);
      background-size: cover;
      background-repeat: no-repeat; 
      background-position: top center;
