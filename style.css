@@ -93,12 +93,11 @@ p{margin-top: 20px;}
       align-items: center;
       min-height: 5vh;
       background: #ffffff;
-      padding:0;
-    }
+  }
   .nav-m{ position: fixed;
     top:0;
    right: 0;
-   padding:20px;
+  
   width: 30%;
 background-color: #ffffff;display:flex;
       justify-content: right;}
@@ -198,6 +197,13 @@ height: 30vh;}
      background-position: top center;
      height: 50vh;
 }
+.background-history{
+ background-image: url(/img/fotowoltanika_dol.jpg);
+     background-size: cover;
+     background-repeat: no-repeat; 
+     background-position: top center;
+     height: 50vh;
+}
 
 
      li{
@@ -211,3 +217,11 @@ height: 30vh;}
      .bold{
       font-weight: 600;
      }
+     .container-text{
+      justify-content: left;
+      padding:30px
+     }
+    .red{
+      background-color: red;
+      height: 2vh;
+    }
