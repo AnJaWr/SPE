@@ -86,91 +86,36 @@ p{margin-top: 20px;}
 }
 
     /* Pasek nawigacyjny */
-  
+   nav{display:flex;align-items:center;justify-content:flex-end;padding:10px 20px;background:#fff}
 
-    nav {
-      color: white;
-      align-items: center;
-      min-height: 5vh;
-      background: #ffffff;
+  /* --- ul (desktop) --- */
+  nav .nav{list-style:none;display:flex;margin:0;padding:0;gap:12px}
+  nav .nav li{display:flex}
+  nav .nav li {
+    width:180px;
+    height:50px;
+    background:#3b3b3b;
+    color:#fff;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:background .25s, transform .25s;
   }
-  .nav-m{ position: fixed;
-    top:0;
-   right: 0;
+  nav .nav li:hover{background:red}
+  nav .nav li a{color:#fff;text-decoration:none;display:block;width:100%;height:100%;line-height:50px;font-size:1.05rem; text-align: center;}
+
+  /* --- burger domyślnie schowany na desktop --- */
+  .burger{display:none;border:0;background:transparent;cursor:pointer;padding:6px}
+  .burger:focus{outline:2px solid #ddd}
+  .burger div{width:25px;height:3px;background:#3b3b3b;margin:4px 0;transition:transform .3s,opacity .3s}
+
   
-  width: 30%;
-background-color: #ffffff;display:flex;
-      justify-content: right;}
-    nav .logo {
-align-self: flex-start;
-    }
 
-    nav ul {      
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
 
-    nav ul li {
-        display: flex;
-      margin-left: 20px;
-      width: 180px;
-  height: 50px;
-  background-color: #3b3b3b; /* lub inny kolor */
-  color: white;
-  border: none;
-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-text-align: center;
-justify-content: center;
-align-items: center;
-transition: 1s;
-    }
-     nav ul li:hover{
-       background-color: red;
-     }
 
-    nav ul li a {
-color: white;
-      text-decoration: none;
-      font-size: 1.2rem;
-        }
+/* ===================================================menu========================================================== */
 
-    /* Styl hamburgera */
-    .burger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .burger div {
-      width: 25px;
-      height: 3px;
-      background: white;
-      margin: 4px;
-      transition: 0.3s;
-    }
-
-    /* Responsywność */
-    @media (max-width: 768px) {
-      nav ul {
-        display: none;
-        flex-direction: column;
-        background: #ffffff;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-      }
-
-      nav ul.active {
-        display: flex;
-      }
-
-      .burger {
-        display: flex;
-      }
-    }
 
     .background-two{
       background-image: url(img/72809.jpg);
@@ -225,3 +170,65 @@ height: 30vh;}
       background-color: red;
       height: 2vh;
     }
+/* --- RESPONSYWNE (<=900px) --- */
+@media (max-width: 900px) {
+  nav ul.nav-m {
+    display: none;              /* domyślnie ukryte */
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  nav ul.nav-m.active {
+    display: flex;              /* pokaż dopiero po kliknięciu */
+  }
+
+  .burger {
+    display: flex;              /* pokaż hamburgera */
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background: #3b3b3b;        /* widoczne na białym tle */
+    margin: 4px;
+    transition: 0.3s;
+  }
+
+  /* animacja X */
+  .burger.open div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .burger.open div:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.open div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .about{
+    width: 100%;
+    margin:2%;
+    background-color: #ffffffa8;
+    height: 96vh;
+  }
+  .btn{
+    max-width: 60%;
+    padding:10px
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  .right, .left{
+    width: 96%;
+  }
+  
+    .map{
+      width:98%; height:auto;
+    }
+}

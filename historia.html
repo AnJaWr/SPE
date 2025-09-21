@@ -8,19 +8,20 @@
 </head>
 <body>
  <div class="navigation">  
-         <nav>
-	
-    <ul class="nav">
-      <li><a href="index.html">O NAS</a></li>
-      <li><a href="#">HISTORIA</a></li>
-      <li><a href="kontakt.html">KONTAKT</a></li>
-    </ul>
-    <div class="burger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </nav>
+<nav>
+  <ul class="nav nav-m">
+    <li><a href="index.html">O NAS</a></li>
+    <li><a href="historia.html">HISTORIA</a></li>
+    <li><a href="kontakt.html">KONTAKT</a></li>
+  </ul>
+
+  <!-- zostawiłem twoją strukturę (div z role/button i onclick) -->
+  <div class="burger" role="button" aria-label="Przełącz menu" aria-expanded="false" tabindex="0" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</nav>
 </div>
  
   <div class="background-history"></div>
@@ -36,5 +37,7 @@ Oddział nasz dysponuje wysokokwalifikowaną kadrą fachowców we wszystkich bra
 
   </div>
   <div class="background-one"></div>
+  <script src="js.js"></script>
+
 </body>
 </html>
