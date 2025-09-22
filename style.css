@@ -110,8 +110,9 @@ p{margin-top: 20px;}
   .burger:focus{outline:2px solid #ddd}
   .burger div{width:25px;height:3px;background:#3b3b3b;margin:4px 0;transition:transform .3s,opacity .3s}
 
-  
-
+  .map{
+      width:800px; height:600px;
+    }
 
 
 /* ===================================================menu========================================================== */
