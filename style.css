@@ -20,7 +20,7 @@ flex-wrap: wrap;
 }
 .main{
     
-height: 100vh;
+min-height: 100vh;
     background-image: url(img/9883040_4237128.jpg);
     background-size: cover;
     background-position: center left;
@@ -65,7 +65,7 @@ padding: 15px}
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
-   max-width: 30%;
+   max-width: 45%;
    transition: 1s;
 }
 .btn:hover{
