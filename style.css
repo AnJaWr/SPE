@@ -20,17 +20,21 @@ flex-wrap: wrap;
 }
 .main{
     
-min-height: 100vh;
+min-height: 100vh;   
+
     background-image: url(img/9883040_4237128.jpg);
     background-size: cover;
     background-position: center left;
-    background-repeat: no-repeat;
-}
+    background-repeat: no-repeat;}
+    .logo{
+      background-color: lightblue;
+    }
+ 
 .about{
     width: 32%;
     height: 25vh;
     padding:20px;
-margin:10%;
+margin:7%;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -44,14 +48,14 @@ h1, h2, .btn {
 }
 h1{
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-style: normal;
   padding: 20px;
  
 }
   h2{
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-style: normal;
 padding: 15px}
 .btn{
@@ -61,7 +65,7 @@ padding: 15px}
     border: 0;
     border-radius: 10px;
     margin:50px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
@@ -92,7 +96,7 @@ p{margin-top: 20px;}
   nav .nav{list-style:none;display:flex;margin:0;padding:0;gap:12px}
   nav .nav li{display:flex}
   nav .nav li {
-    width:180px;
+    min-width:286px;
     height:50px;
     background:#3b3b3b;
     color:#fff;
@@ -158,7 +162,10 @@ height: 30vh;}
      .link{
       text-decoration: none;
       font-weight: 600;
-      color:red;
+      color:white;
+      background-color: red;
+      padding:5px;
+      margin:0px 7px;
      }
      .bold{
       font-weight: 600;
@@ -171,6 +178,14 @@ height: 30vh;}
       background-color: red;
       height: 2vh;
     }
+    /*----------------responsywne (<1366)  --- */
+    
+@media (max-width: 1367px) {
+  .about{
+    margin:3%;
+  }
+}
+
 /* --- RESPONSYWNE (<=900px) --- */
 @media (max-width: 900px) {
   nav ul.nav-m {
