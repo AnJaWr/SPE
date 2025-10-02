@@ -18,6 +18,9 @@ width: 100%;
 background-color: white;
 flex-wrap: wrap;
 }
+.container-contact{
+  justify-content: space-around;
+}
 .main{
     
 min-height: 100vh;   
@@ -118,7 +121,7 @@ p{margin-top: 20px;}
   .burger div{width:25px;height:3px;background:#3b3b3b;margin:4px 0;transition:transform .3s,opacity .3s}
 
   .map{
-      width:800px; height:600px;
+      width:700px; height:500px;
     }
 
 
