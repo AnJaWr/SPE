@@ -58,6 +58,9 @@ h1{
   font-size: 1.8rem;
   font-style: normal;
 padding: 15px}
+.info{
+ text-align:center; padding: 30px; background-color: rgb(174, 194, 212);
+}
 .btn{
     background-color: red;
     color: white;
@@ -166,6 +169,10 @@ height: 30vh;}
       background-color: red;
       padding:5px;
       margin:0px 7px;
+     }
+     .link-tbg{
+      background-color: rgba(255, 255, 255, 0);
+      color: black;
      }
      .bold{
       font-weight: 600;
