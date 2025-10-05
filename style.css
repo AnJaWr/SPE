@@ -22,19 +22,28 @@ flex-wrap: wrap;
   justify-content: center;
 }
 .main{
-    
 min-height: 100vh;   
-
-    background-image: url(img/9883040_4237128.jpg);
     background-size: cover;
     background-position: center left;
-    background-repeat: no-repeat;}
+     transition: opacity 2s ease-in-out;
+    }
+
+    .main.visible {
+      opacity: 1;
+    }
+
+
     .logo{
       background-color: lightblue;
     }
- 
+ .main_bg1{
+  background-image: url(img/9883040_4237128.jpg);
+ }
+ .main_bg2{
+  background-image: url(img/bg2.jpg);
+ }
 .about{
-    width: 32%;
+    width: 41%;
     height: 25vh;
     padding:15px;
 margin:4%;
