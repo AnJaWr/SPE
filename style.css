@@ -36,8 +36,8 @@ min-height: 100vh;
 .about{
     width: 32%;
     height: 25vh;
-    padding:20px;
-margin:7%;
+    padding:15px;
+margin:4%;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -62,7 +62,8 @@ h1{
   font-style: normal;
 padding: 15px}
 .info{
- text-align:center; padding: 30px; background-color: rgb(174, 194, 212);
+ text-align:center; padding: 30px; background-color: rgb(174, 194, 212); margin-top: 20px;
+ margin-bottom: 20px;
 }
 .btn{
     background-color: red;
@@ -83,9 +84,11 @@ padding: 15px}
 }
 .left, .right{
   padding: 5%;
-  width: 46%;
-
-
+  width: 45%;
+}
+.right-contact{
+  padding: 5%;
+  width: 54%;
 }
 p{margin-top: 20px;}
 .navigation{
@@ -121,7 +124,7 @@ p{margin-top: 20px;}
   .burger div{width:25px;height:3px;background:#3b3b3b;margin:4px 0;transition:transform .3s,opacity .3s}
 
   .map{
-      width:700px; height:500px;
+      width:100%; height:500px;
     }
 
 
@@ -174,6 +177,13 @@ height: 30vh;}
       background-color: red;
       padding:5px;
       margin:0px 7px;
+     }
+     .link-group{
+padding: 10px 20px ;
+
+     }
+     .group{
+margin-bottom:40px;
      }
      .link-tbg{
       background-color: rgba(255, 255, 255, 0);
@@ -252,7 +262,7 @@ height: 30vh;}
   h1{
     font-size: 2.5rem;
   }
-  .right, .left{
+  .right, .right-contact, .left{
     width: 96%;
   }
   
