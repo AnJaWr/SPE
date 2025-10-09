@@ -206,12 +206,15 @@ height: 30vh;}
       margin:0px 7px;
       line-height: 30px;
      }
-     .link-group{
-padding: 10px 20px ;
-
-     }
+ 
      .group{
 margin-bottom:40px;
+
+width: 100%;
+     }
+     .group-item{
+      display: inline-block;
+      margin: 5px;
      }
      .link-tbg{
       background-color: rgba(255, 255, 255, 0);
@@ -309,4 +312,21 @@ margin-bottom:40px;
     .contact-col{
       width: 100%;
     }
+    .group{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+    }
+        .group-item{
+width: 80%;
+background-color: red;
+padding:7px;
+margin-top: 25px;
+
+
+     }
+     .info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+     }
 }
